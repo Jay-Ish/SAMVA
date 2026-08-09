@@ -5,14 +5,14 @@ pipeline that fills in missing CVSS scores for real-world vulnerabilities, combi
 them with EPSS exploitation data and CWE weakness categories, and produces a
 prioritised vulnerability report.
 
-## What SAMVA actually does, in one paragraph
+## What SAMVA actually does?
 
 When a vulnerability scanner (Trivy) finds a known issue, it often already has a
-severity score. But sometimes it doesn't — a brand-new vulnerability might not be
+severity score. But sometimes it doesn't a brand-new vulnerability might not be
 scored anywhere yet. SAMVA's job is to fill that gap: a trained machine learning
 model reads the vulnerability's text description and predicts the 8 official CVSS
 metrics (like "how hard is this to exploit"). Those predictions are then run
-through the *real, official* CVSS formula — never guessed directly — so every
+through the *real, official* CVSS formula that was never guessed directly, so every
 result stays standard-compliant, whether it came from an authoritative source or
 from the model.
 
